@@ -1,0 +1,20 @@
+# ninja log v5
+11	1930	7066588600152372	build.ninja	502668fe13486d5e
+6	2179	7070187778100760	CMakeFiles/Music.dir/GerenciadorMusicas.cpp.obj	aa752c2cd57f69a9
+1	2738	7066414421601418	CMakeFiles/Music.dir/Musica.cpp.obj	a9dd5ad74494bdca
+2628	3607	7070189086885571	Music.exe	eacf684ba653e837
+13	2625	7070189077277200	CMakeFiles/Music.dir/main.cpp.obj	be1ef47003f355c
+11	2769	7070189411052754	CMakeFiles/Music.dir/main.cpp.obj	be1ef47003f355c
+2791	3617	7070189419517889	Music.exe	eacf684ba653e837
+11	3009	7070191618151404	CMakeFiles/Music.dir/GerenciadorMusicas.cpp.obj	aa752c2cd57f69a9
+3013	4096	7070191628805276	Music.exe	eacf684ba653e837
+13	2101	7070191878562815	CMakeFiles/Music.dir/main.cpp.obj	be1ef47003f355c
+2104	2824	7070191885716550	Music.exe	eacf684ba653e837
+13	3060	7070193778404540	CMakeFiles/Music.dir/GerenciadorMusicas.cpp.obj	aa752c2cd57f69a9
+3063	3606	7070193783692499	Music.exe	eacf684ba653e837
+6	1561	7070197439283165	CMakeFiles/Music.dir/GerenciadorMusicas.cpp.obj	aa752c2cd57f69a9
+1563	2201	7070197445571306	Music.exe	eacf684ba653e837
+7	2675	7070197883655644	CMakeFiles/Music.dir/GerenciadorMusicas.cpp.obj	aa752c2cd57f69a9
+2677	3155	7070197888513079	Music.exe	eacf684ba653e837
+22	2185	7104911705284690	CMakeFiles/Music.dir/main.cpp.obj	be1ef47003f355c
+10	3592	7104913048231798	CMakeFiles/Music.dir/main.cpp.obj	be1ef47003f355c

@@ -1,0 +1,80 @@
+li
+    std::ofstream PastaSalvas("JaSalvas.txt",std::ios::out | std::ios::trunc);
+    if (PastaSalvas.is_open())
+        cout << "Pasta aberta com sucesso";
+
+
+}
+
+void setMusicasPreSalvas(string txt) {
+    std::ifstream arquivoE(txt);
+    if (arquivoE.is_open()) {
+        string linha;
+
+        string COD;
+        string NOME;
+        string CANTOR;
+        string LANCA;
+        while (getline(arquivoE, linha, ';')) {
+            if (COD.empty())
+                COD = linha;
+            else if (NOME.empty())
+                NOME = linha;
+            else if (CANTOR.empty())
+                CANTOR = linha;
+            else if (LANCA.empty())
+                LANCA = linha;
+            else {
+                try {
+                    GerenciadorMusicas lista1;
+                    lista1.adicionaMusica(std::stoi(COD), NOME, CANTOR, std::stoi(LANCA));
+                    lista1.salvarMusicaArquivo("Musicas.txt");
+
+                    COD.clear();
+                    NOME.clear();
+                    CANTOR.clear();
+                    LANCA.clear();
+                } catch (const std::invalid_argument &e) {
+                    std::cerr << "Erro ao converter string para inteiro: " << e.what() << std::endl;
+                }
+
+
+            }
+        }
+
+    } else
+        cout << "Erro";
+}
+
+
+void GerenciadorMusicas::addMusicasArquivo(string arquivo) {
+    std::ifstream Pasta("Jasalvas.txt");
+    if (Pasta.is_open()){
+        string linha;
+        string COD;
+        string NOME;
+        string CANTOR;
+        string LANCA;
+
+        while (std::getline(Pasta,linha,';') || std::getline(Pasta, linha, '\n')) {
+            if (COD.empty())
+                COD = linha;
+            else if (NOME.empty())
+                NOME = linha;
+            else if (CANTOR.empty())
+                CANTOR = linha;
+            else if (LANCA.empty())
+                LANCA = linha;
+            else{
+                GerenciadorMusicas listaNova;
+                listaNova.adicionaMusica(std::stoi(COD),NOME,CANTOR,std::stoi(LANCA));
+                listaNova.salvarMusicaArquivo(arquivo);
+
+                COD.clear();
+                NOME.clear();
+                CANTOR.clear();
+                LANCA.clear();
+            }
+        }
+    }
+}
